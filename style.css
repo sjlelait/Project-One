@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+img {
+    display: block;
+}
+
+main {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   transform: translate(0, -50%); 
+   text-align: center;
+   color: #130c1a;
+   text-shadow: 0 0 25px;
+}
+#noun, #answer, #def {
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-decoration-thickness: bold;
+}
