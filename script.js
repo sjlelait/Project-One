@@ -1,5 +1,5 @@
 // API source code 
-//"https://www.dictionaryapi.com/api/v3/references/thesaurus/json/"+userInput+"?=020263dd-5ac1-411c-864b-fcf1f0644c9b"
+//"https://www.dictionaryapi.com/api/v3/references/thesaurus/json/"+userInput+"?key=020263dd-5ac1-411c-864b-fcf1f0644c9b"
 // KEY 020263dd-5ac1-411c-864b-fcf1f0644c9b
 const $word = $(`#word`);
 const $synonym = $(`#syn`);
@@ -27,11 +27,11 @@ $(document).ready(function() {
     }
 
     function render() {
-        $word.text(wordData.hwi)
-        $synonym.text(wordData.syns)
-        $shortDef.text(wordData.shortdef)
+        $word.text(wordData[0].hwi.hw)
+        $synonym.text(wordData[0].meta.syns[0,1,2])
+        $shortDef.text(wordData[0].shortdef)
 
-        console.log(wordData)
+        console.log(wordData[0])
     }
 
 })
