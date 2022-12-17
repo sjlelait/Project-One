@@ -27,5 +27,8 @@ main {
 #noun, #answer, #def {
     font-weight: bolder;
     text-decoration-line: underline;
-    text-decoration-thickness: bold;
+}
+
+#data{
+    display: none;
 }

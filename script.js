@@ -18,11 +18,11 @@ $(document).ready(function() {
         $.ajax({
             url: "https://www.dictionaryapi.com/api/v3/references/thesaurus/json/"+userInput+"?key=020263dd-5ac1-411c-864b-fcf1f0644c9b"
         }).then(
-            (data) => {
-            wordData = data
-                render()
+            function (data) {
+                wordData = data
+                render()                                                            
             },
-            (error) => {
+            function (error) {
                 console.log("bad request", error)
             }
         )
@@ -32,6 +32,9 @@ $(document).ready(function() {
         $word.text(wordData[0].hwi.hw)
         $synonym.text(wordData[0].meta.syns[0,1].join(",  "))
         $shortDef.text(wordData[0].shortdef.join(",  "))
+        $("#data").toggle(1000);
     };
+
+    
 
 });
