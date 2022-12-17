@@ -36,7 +36,7 @@ main {
     display: none;    
 }
 
-ul {
+aside {
     display: none;
     position: fixed;
     text-align: center;
@@ -45,5 +45,12 @@ ul {
     right: 0;
     margin: 20px;
     font-weight: bold; 
+    list-style: none;
+}
+
+#newForm {
+    display: none;
+}
+ul {
     list-style: none;
 }
