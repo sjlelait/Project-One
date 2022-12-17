@@ -20,19 +20,27 @@ $(document).ready(function() {
         }).then(
             function (data) {
                 wordData = data
-                render()                                                            
+                render()
+                saveWord()                                                            
             },
             function (error) {
                 console.log("bad request", error)
             }
         )
     }
-
     function render() {
         $word.text(wordData[0].hwi.hw)
-        $synonym.text(wordData[0].meta.syns[0,1].join(",  "))
+        $synonym.text(wordData[0].meta.syns[0].join(",  "))
         $shortDef.text(wordData[0].shortdef.join(",  "))
         $("#data").toggle(1000);
-    };    
+        
+    };
+    function saveWord() {
+        $newForm = $("<form></form>");
+        $newForm.append('<input type ="text" placeholder="Your word"/> <input type="submit" value="Save"/>')
+        $("div").append($newForm);
+    }
 
 });
+
+

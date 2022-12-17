@@ -13,9 +13,10 @@ A tool to help writers find inspiration using the Merriam Webster Thesauraus API
 ## Screenshots
 
 ## Getting Started
-Click here to see the deployed app!
+[Click Here](https://sjlelait.github.io/also-knows-as/) to see the deployed app!
+
 ## Future Enhancements
-- Ability to input both nouns and verbs
+- Ability to filter results 
 - Ability to save lists locally
 
 
