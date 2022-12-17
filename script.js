@@ -14,8 +14,7 @@ $(document).ready(function() {
     $("form").on("submit", handleData)
     function handleData(evt) {
         evt.preventDefault()
-        userInput = $input.val()
-        
+        userInput = $input.val()        
         $.ajax({
             url: "https://www.dictionaryapi.com/api/v3/references/thesaurus/json/"+userInput+"?key=020263dd-5ac1-411c-864b-fcf1f0644c9b"
         }).then(
@@ -38,16 +37,15 @@ $(document).ready(function() {
     };
     function saveWord() {
         $newForm = $("<form id=newForm></form>");
-        $newForm.append('<input id="newInput" type ="text" placeholder="Your word"/> <input type="submit" value="Save"/>')
+        $newForm.append('<input id="inputVal" type="text" placeholder="Your word"/> <input id="save" type="submit" value="Save"/>')
         $("div").append($newForm);
         $("ul").toggle(1000);
-        $("#save").click(function (evt) {
-            evt.preventDefault()
-            inputVal = $("#newInput").val();
+        $("#save").click(function(evt) {
+            evt.preventDefault();
+            inputVal = $("#inputVal").val();               
             $("ul").append("<li>"+inputVal+"</li>");
         });
     }
-
 });
 
 
