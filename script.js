@@ -33,8 +33,6 @@ $(document).ready(function() {
         $synonym.text(wordData[0].meta.syns[0,1].join(",  "))
         $shortDef.text(wordData[0].shortdef.join(",  "))
         $("#data").toggle(1000);
-    };
-
-    
+    };    
 
 });

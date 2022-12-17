@@ -24,11 +24,15 @@ main {
    color: #130c1a;
    text-shadow: 0 0 25px;
 }
-#noun, #answer, #def {
+
+#p1, #p2, #p3 {
     font-weight: bolder;
     text-decoration-line: underline;
 }
 
 #data{
     display: none;
+    color: #130c1a;
+    padding: 15px 15px;
+    max-width: 890px;
 }
