@@ -10,8 +10,7 @@ $(document).ready(function() {
     function handleData(evt) {
         evt.preventDefault()
         userInput = $input.val()
-        $input.val("");
-        
+        $input.val("");        
         $.ajax({
             url: "https://www.dictionaryapi.com/api/v3/references/thesaurus/json/"+userInput+"?key=020263dd-5ac1-411c-864b-fcf1f0644c9b"
         }).then(
@@ -25,6 +24,7 @@ $(document).ready(function() {
         )        
     }
     saveWord();
+
     function render() {
         $word.text(wordData[0].hwi.hw)
         $synonym.text(wordData[0].meta.syns[0].join(",  "))
@@ -46,5 +46,3 @@ $(document).ready(function() {
     
 });
 
-
-// Be able to type a new word, keeping the "words you liked" list
