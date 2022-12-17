@@ -35,3 +35,15 @@ main {
 #data {
     display: none;    
 }
+
+ul {
+    display: none;
+    position: fixed;
+    text-align: center;
+    float: right;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-weight: bold; 
+    list-style: none;
+}

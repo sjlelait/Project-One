@@ -17,8 +17,8 @@ A tool to help writers find inspiration using the Merriam Webster Thesauraus API
 
 ## Future Enhancements
 - Ability to filter results 
-- Ability to save lists locally
-
+- Ability to save liked words
+- Local storage for list
 
 
 

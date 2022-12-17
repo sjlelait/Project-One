@@ -15,13 +15,14 @@ $(document).ready(function() {
     function handleData(evt) {
         evt.preventDefault()
         userInput = $input.val()
+        
         $.ajax({
             url: "https://www.dictionaryapi.com/api/v3/references/thesaurus/json/"+userInput+"?key=020263dd-5ac1-411c-864b-fcf1f0644c9b"
         }).then(
             function (data) {
                 wordData = data
                 render()
-                saveWord()                                                            
+                saveWord()                                                           
             },
             function (error) {
                 console.log("bad request", error)
@@ -36,9 +37,15 @@ $(document).ready(function() {
         
     };
     function saveWord() {
-        $newForm = $("<form></form>");
-        $newForm.append('<input type ="text" placeholder="Your word"/> <input type="submit" value="Save"/>')
+        $newForm = $("<form id=newForm></form>");
+        $newForm.append('<input id="newInput" type ="text" placeholder="Your word"/> <input type="submit" value="Save"/>')
         $("div").append($newForm);
+        $("ul").toggle(1000);
+        $("#save").click(function (evt) {
+            evt.preventDefault()
+            inputVal = $("#newInput").val();
+            $("ul").append("<li>"+inputVal+"</li>");
+        });
     }
 
 });
