@@ -16,7 +16,9 @@
             <h1>Also Known As</h1>
             <h3>Help for the weary poet</h3>
         </header>
-        <ul> Words You Liked: </ul>
+        <aside>
+            <ul> Words You Liked: </ul>
+        </aside>
         <form>
             <input type="text" placeholder="Hit me with a word"/>
             <input type="submit" value="Let's go!"/>
@@ -27,9 +29,13 @@
             <p id="p2"> What you want to convey</p>
             <p id="short-def"></p>
             <p id ="p3"> Maybe these work!</p>
-            <p id="syn"></p>
-            <p id="p4">Find a word you liked? Save it here!</p>
-        </div>            
+            <p id="syn"></p>  
+            <form id=newForm> 
+                <p id="p4">Find a word you liked? Save it here!</p>          
+                <input id="newInput" type ="text" placeholder="Your word"/> 
+                <input id="save" type="submit" value="Save"/>    
+            </form>          
+        </div>  
     </main>  
 </body>
 </html>
