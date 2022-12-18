@@ -13,9 +13,7 @@ A tool to help writers find inspiration using the Merriam Webster Thesauraus API
 ## Screenshots
 
 ## Getting Started
-[Click Here](https://sjlelait.github.io/also-knows-as/) to see the deployed app!
-
-## Future Enhancements
+[Click Here](https://sjlelait.github.io/also-known-as/) to see the deployed app!
 - Ability to filter results 
 - Ability to save liked words
 - Local storage for list
