@@ -36,9 +36,12 @@ $(document).ready(function() {
     
     function saveWord() {                
         $("#save").click(function (evt) {
-            evt.preventDefault()
+            evt.preventDefault()            
             inputVal = $("#newInput").val();
+            $("#newInput").val("");
             $("ul").append("<li>"+inputVal+"</li>");
-        })
-    };    
+
+            //
+        });
+    }    
 });
