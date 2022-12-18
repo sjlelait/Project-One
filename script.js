@@ -22,7 +22,7 @@ $(document).ready(function() {
                 console.log("bad request", error)
             }
         )        
-    }
+    };
     saveWord();
 
     function render() {
@@ -39,9 +39,6 @@ $(document).ready(function() {
             evt.preventDefault()
             inputVal = $("#newInput").val();
             $("ul").append("<li>"+inputVal+"</li>");
-
-            //
-        });
-    }
-    
+        })
+    };    
 });
