@@ -26,9 +26,9 @@ $(document).ready(function() {
     saveWord();
 
     function render() {
-        $word.text(wordData[0].hwi.hw)
-        $synonym.text(wordData[0].meta.syns[0].join(",  "))
-        $shortDef.text(wordData[0].shortdef.join(",  "))
+        $word.text(wordData[1,0].hwi.hw)
+        $synonym.text(wordData[1,0].meta.syns[0].join(",  "))
+        $shortDef.text(wordData[1,0].shortdef.join(",  "))
         $("#data").show(1000); 
         $("aside").show(1000);
         $("#newForm").show(1000);       
@@ -40,8 +40,6 @@ $(document).ready(function() {
             inputVal = $("#newInput").val();
             $("#newInput").val("");
             $("ul").append("<li>"+inputVal+"</li>");
-
-            //
         });
     }    
 });
