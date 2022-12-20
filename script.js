@@ -41,6 +41,6 @@ $(document).ready(function() {
             $("#newInput").val("");
             $("ul").append("<li>"+inputVal+"</li>");
         });
-    }    
+    } 
 });
 
