@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     display: flex;
     margin: 0 auto;
@@ -50,7 +52,7 @@ header {
 
 aside {
     display: none;
-    position: fixed;
+    position: absolute;
     text-align: center;
     float: right;
     top: 0;
